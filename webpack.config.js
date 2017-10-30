@@ -3,7 +3,8 @@ var webpack = require('webpack');
 
 const entry = {
     // 入口文件自定义：
-    'index': './src/index.js'
+    'admin': './src/admin/index.js',
+    'index': './src/index/index.js'
 };
 
 module.exports = {

@@ -1,4 +1,4 @@
-var startproxy = require('./scripts/startproxy');
+var startproxy = require('./build/startproxy');
 var info = require('./utils/info')
 
 
