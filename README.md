@@ -52,14 +52,16 @@ $ npm stop
 
 ## Migrate
 
-需要先全局安装：
 
 ```shell
-$ yarn global add db-migrate
-$ db-migrate create add-user
+$ npm run migrate -- create add-user
+
+# PS:下面两句话等价
+$ npm run migrate -- {参数列表} 
+$ db-migrate {参数列表}
 ```
 
-具体配置参考：https://db-migrate.readthedocs.io/en/latest/
+具体配置与使用参考：https://db-migrate.readthedocs.io/en/latest/
 
 ## 配置说明
 

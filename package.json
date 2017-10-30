@@ -52,6 +52,7 @@
     "test": "npm run lint -- --fix && npm run test-local",
     "clean": "rm -rf ./app/public/dist",
     "test-local": "egg-bin test",
+    "migrate": "db-migrate",
     "lint": "eslint ."
   },
   "ci": {
