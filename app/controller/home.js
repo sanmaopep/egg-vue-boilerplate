@@ -1,9 +1,14 @@
 'use strict';
 
-module.exports = app => {
+module.exports = (app) => {
   class HomeController extends app.Controller {
+    // 首页
     * index() {
-      this.ctx.body = 'Hello World';
+      yield this.ctx.render('hello.pug');
+    }
+    // 测试Json
+    * json() {
+      this.ctx.body = "{test:123}";
     }
   }
   return HomeController;
