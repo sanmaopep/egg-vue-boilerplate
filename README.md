@@ -43,15 +43,23 @@ $ npm stop
 		router.js	配置路由
 /utils -- 存放工具函数（前后端可复用）
 /build -- 脚手架脚本及其相关文件
+/migrations -- 数据库迁移相关文件
 ```
 
 1. eggjs为阿里后端开发框架，参考https://eggjs.org
-2. 数据库migrate采用db-migrate框架，类似于laravel的migrate
+2. 数据库migrate采用db-migrate框架，相关文件在migrations下，类似于laravel的migrate
 
 
 ## Migrate
 
-建设中_(:з」∠)_
+需要先全局安装：
+
+```shell
+$ yarn global add db-migrate
+$ db-migrate create add-user
+```
+
+具体配置参考：https://db-migrate.readthedocs.io/en/latest/
 
 ## 配置说明
 
