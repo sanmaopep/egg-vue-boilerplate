@@ -1,0 +1,24 @@
+### 建设中....
+
+
+### 基础镜像(一个Nodejs镜像即可，随着你的云服务的变化而变化)
+FROM node:0.10-onbuild
+
+### 
+ENV PROJECT_NAME eggvue
+### source
+COPY . /root/$PROJECT_NAME
+
+
+### 安装依赖
+WORKDIR /root/$PROJECT_NAME
+RUN npm install -g yarn
+RUN yarn install
+RUN npm start
+
+### 数据迁移
+RUN npm run migrate
+
+### 当前应用端口
+EXPOSE 7001
+
